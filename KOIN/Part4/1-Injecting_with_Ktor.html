@@ -1,0 +1,678 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Injecting with Ktor · Koin Doc Zh</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="AndyJennifer">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://andyjennifer.com" target="_blank" class="custom-link">My Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Intro.html">
+            
+                <a href="../Intro.html">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Setup.html">
+            
+                <a href="../Setup.html">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN CORE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Part1/01-Koin_DSL.html">
+            
+                <a href="../Part1/01-Koin_DSL.html">
+            
+                    
+                    Koin DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Part1/02-Definitaions.html">
+            
+                <a href="../Part1/02-Definitaions.html">
+            
+                    
+                    Definitations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Part1/03-Modules.html">
+            
+                <a href="../Part1/03-Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Part1/04-Start_Koin.html">
+            
+                <a href="../Part1/04-Start_Koin.html">
+            
+                    
+                    Start Koin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Part1/05-Koin_Component.html">
+            
+                <a href="../Part1/05-Koin_Component.html">
+            
+                    
+                    Koin Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Part1/06-Injecting_Parameters.html">
+            
+                <a href="../Part1/06-Injecting_Parameters.html">
+            
+                    
+                    Injecting Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Part1/07-Setters_Injection.html">
+            
+                <a href="../Part1/07-Setters_Injection.html">
+            
+                    
+                    Setters Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Part1/08-Scope_API.html">
+            
+                <a href="../Part1/08-Scope_API.html">
+            
+                    
+                    Scope API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Part1/09-Using_Java.html">
+            
+                <a href="../Part1/09-Using_Java.html">
+            
+                    
+                    Using Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../Part1/10-Logging.html">
+            
+                <a href="../Part1/10-Logging.html">
+            
+                    
+                    Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../Part1/11-Properties.html">
+            
+                <a href="../Part1/11-Properties.html">
+            
+                    
+                    Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../Part1/12-Experimental_Features.html">
+            
+                <a href="../Part1/12-Experimental_Features.html">
+            
+                    
+                    Experimental Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN TEST
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Part2/1-Junit&Mocks.html">
+            
+                <a href="../Part2/1-Junit&Mocks.html">
+            
+                    
+                    Junit & Mocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN ANDROID
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Part3/1-Start_on_Android.html">
+            
+                <a href="../Part3/1-Start_on_Android.html">
+            
+                    
+                    Start on Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Part3/2-Android_DSL.html">
+            
+                <a href="../Part3/2-Android_DSL.html">
+            
+                    
+                    Android DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Part3/3-Retrieve_Instances.html">
+            
+                <a href="../Part3/3-Retrieve_Instances.html">
+            
+                    
+                    Retrieve Instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Part3/4-Koin_Scope.html">
+            
+                <a href="../Part3/4-Koin_Scope.html">
+            
+                    
+                    Koin Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Part3/5-ViewModel.html">
+            
+                <a href="../Part3/5-ViewModel.html">
+            
+                    
+                    ViweModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Part3/6-Fragment_Factory.html">
+            
+                <a href="../Part3/6-Fragment_Factory.html">
+            
+                    
+                    Fragment Factory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOTIN KTOR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="1-Injecting_with_Ktor.html">
+            
+                <a href="1-Injecting_with_Ktor.html">
+            
+                    
+                    Injecting with Ktor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Injecting with Ktor</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><code>koin-ktor</code> &#x9879;&#x76EE;&#x81F4;&#x529B;&#x4E8E;&#x4E3A; <a href="https://github.com/ktorio/ktor" target="_blank">Ktor</a> &#x5E26;&#x6765;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x3002;</p>
+<h3 id="&#x5B89;&#x88C5;koin&#x4E0E;&#x6CE8;&#x5165;">&#x5B89;&#x88C5;Koin&#x4E0E;&#x6CE8;&#x5165;</h3>
+<p>&#x8981;&#x542F;&#x52A8; Koin &#x5BB9;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>installKoin()</code> &#x542F;&#x52A8;&#x51FD;&#x6570;:</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> Application.<span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// Install Ktor features</span>
+    install(DefaultHeaders)
+    install(CallLogging)
+    install(Koin) {
+        slf4jLogger()
+        modules(helloAppModule)
+    }
+
+    <span class="hljs-comment">//...</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE; Ktor &#x5916;&#x90E8;&#x542F;&#x52A8;&#x5B83;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x4E0D;&#x80FD;&#x4E0E;  <code>autoreload</code> &#x529F;&#x80FD;&#x517C;&#x5BB9;&#x3002;</p>
+</blockquote>
+<p>&#x5728; <code>Application</code> &#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; KoinCompoent &#x76F8;&#x5173;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> Application.<span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">//...</span>
+
+    <span class="hljs-comment">// Lazy inject HelloService</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> service by inject&lt;HelloService&gt;()
+
+    // Routing section
+    routing {
+        get(&quot;/hello&quot;) {
+            call.respondText(service.sayHello())
+        }
+    }
+}
+</span></code></pre>
+<p>&#x5728; <code>Routing</code> &#x7C7B;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> Application.<span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">//...</span>
+
+    <span class="hljs-comment">// Lazy inject HelloService</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> service by inject&lt;HelloService&gt;()
+
+    // Routing section
+    routing {
+        v1()
+    }
+}
+
+fun Routing.v1() {
+
+    // Lazy inject HelloService from within a Ktor Routing Node
+    <span class="hljs-keyword">val</span> service by inject&lt;HelloService&gt;()
+
+    get(&quot;/v1/hello&quot;) {
+        call.respondText(&quot;[/v1/hello] &quot; + service.sayHello())
+    }
+}
+</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: KOTIN KTOR">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Injecting with Ktor","tags":["koin"],"categories":["koin"],"level":"1.7.1","depth":2,"previous":{"title":"KOTIN KTOR","level":"1.7","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Injecting with Ktor","level":"1.7.1","depth":2,"path":"KOIN/Part4/1-Injecting_with_Ktor.md","ref":"KOIN/Part4/1-Injecting_with_Ktor.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","github","sharing-plus","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/AndyJennifer"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"AndyJennifer","repo":"glory","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AndyJennifer","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Koin Doc Zh","language":"zh-hans","links":{"sidebar":{"My Blog":"https://andyjennifer.com"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"KOIN/Part4/1-Injecting_with_Ktor.md","mtime":"2020-03-30T17:53:27.136Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-30T17:54:00.244Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

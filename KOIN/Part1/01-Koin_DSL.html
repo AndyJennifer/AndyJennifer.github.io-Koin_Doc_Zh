@@ -1,0 +1,695 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Koin DSL · Koin Doc Zh</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="AndyJennifer">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-Definitaions.html" />
+    
+    
+    <link rel="prev" href="../../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://andyjennifer.com" target="_blank" class="custom-link">My Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Intro.html">
+            
+                <a href="../Intro.html">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Setup.html">
+            
+                <a href="../Setup.html">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN CORE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="01-Koin_DSL.html">
+            
+                <a href="01-Koin_DSL.html">
+            
+                    
+                    Koin DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-Definitaions.html">
+            
+                <a href="02-Definitaions.html">
+            
+                    
+                    Definitations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-Modules.html">
+            
+                <a href="03-Modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-Start_Koin.html">
+            
+                <a href="04-Start_Koin.html">
+            
+                    
+                    Start Koin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05-Koin_Component.html">
+            
+                <a href="05-Koin_Component.html">
+            
+                    
+                    Koin Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="06-Injecting_Parameters.html">
+            
+                <a href="06-Injecting_Parameters.html">
+            
+                    
+                    Injecting Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="07-Setters_Injection.html">
+            
+                <a href="07-Setters_Injection.html">
+            
+                    
+                    Setters Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="08-Scope_API.html">
+            
+                <a href="08-Scope_API.html">
+            
+                    
+                    Scope API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="09-Using_Java.html">
+            
+                <a href="09-Using_Java.html">
+            
+                    
+                    Using Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10-Logging.html">
+            
+                <a href="10-Logging.html">
+            
+                    
+                    Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="11-Properties.html">
+            
+                <a href="11-Properties.html">
+            
+                    
+                    Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="12-Experimental_Features.html">
+            
+                <a href="12-Experimental_Features.html">
+            
+                    
+                    Experimental Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN TEST
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Part2/1-Junit&Mocks.html">
+            
+                <a href="../Part2/1-Junit&Mocks.html">
+            
+                    
+                    Junit & Mocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOIN ANDROID
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Part3/1-Start_on_Android.html">
+            
+                <a href="../Part3/1-Start_on_Android.html">
+            
+                    
+                    Start on Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Part3/2-Android_DSL.html">
+            
+                <a href="../Part3/2-Android_DSL.html">
+            
+                    
+                    Android DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Part3/3-Retrieve_Instances.html">
+            
+                <a href="../Part3/3-Retrieve_Instances.html">
+            
+                    
+                    Retrieve Instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Part3/4-Koin_Scope.html">
+            
+                <a href="../Part3/4-Koin_Scope.html">
+            
+                    
+                    Koin Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Part3/5-ViewModel.html">
+            
+                <a href="../Part3/5-ViewModel.html">
+            
+                    
+                    ViweModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Part3/6-Fragment_Factory.html">
+            
+                <a href="../Part3/6-Fragment_Factory.html">
+            
+                    
+                    Fragment Factory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    KOTIN KTOR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Part4/1-Injecting_with_Ktor.html">
+            
+                <a href="../Part4/1-Injecting_with_Ktor.html">
+            
+                    
+                    Injecting with Ktor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Koin DSL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="koin-&#x662F;&#x4EC0;&#x4E48;">KOIN &#x662F;&#x4EC0;&#x4E48;</h3>
+<p>KOIN &#x662F;&#x4E00;&#x4E2A;&#x9762;&#x5411; Kotlin &#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x5B9E;&#x7528;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x6846;&#x67B6;&#x3002;&#x7528;&#x7EAF; Kotlin &#x7F16;&#x5199;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x89E3;&#x6790;:&#x6CA1;&#x6709;&#x4EE3;&#x7406;&#xFF0C;&#x6CA1;&#x6709;&#x4EE3;&#x7801;&#x751F;&#x6210;&#xFF0C;&#x6CA1;&#x6709;&#x53CD;&#x5C04;&#x3002;Koin &#x662F;&#x4E00;&#x4E2A; DSL&#x3001;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x5BB9;&#x5668;&#x548C;&#x4E00;&#x4E2A;&#x5B9E;&#x7528;&#x7684;API</p>
+<h3 id="koin-dsl">Koin DSL</h3>
+<p>&#x7531;&#x4E8E; Kotlin &#x8BED;&#x8A00;&#x7684;&#x5F3A;&#x5927;&#x529F;&#x80FD;&#xFF0C;Koin &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD; DSL &#x6765;&#x5E2E;&#x52A9;&#x4F60;&#x63CF;&#x8FF0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#x6216;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528; Kotlin DSL&#xFF0C;Koin &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x7684;&#x51FD;&#x6570;&#x5F0F; API &#x6765;&#x89E3;&#x51B3;&#x4F60;&#x7684;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x3002;</p>
+<h4 id="application--module-dsl">Application &amp; Module DSL</h4>
+<p>Koin &#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x6765;&#x63CF;&#x8FF0; Koin Application &#x4E2D;&#x7684;&#x5143;&#x7D20;</p>
+<ul>
+<li>Application DSL :&#x63CF;&#x8FF0; Koin &#x5BB9;&#x5668;&#x914D;&#x7F6E;</li>
+<li>Module  DSL :&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x5FC5;&#x987B;&#x8981;&#x6CE8;&#x5165;&#x7684;&#x7EC4;&#x4EF6;</li>
+</ul>
+<h4 id="application-dsl">Application DSL</h4>
+<p>&#x4E00;&#x4E2A; <code>KoinApplication</code> &#x662F; Koin &#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x5C06;&#x5141;&#x8BB8;&#x60A8;&#x914D;&#x7F6E;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3001;&#x5C5E;&#x6027;&#x52A0;&#x8F7D;&#x548C;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x8981;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; <code>KoinApplication</code> &#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;:</p>
+<ul>
+<li><code>koinApplication { }</code> &#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>koinApplication</code> &#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</li>
+<li><code>startKoin { }</code> &#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>KoinApplication</code> &#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5728;  <code>GlobalContext</code> &#x4E2D;&#x6CE8;&#x518C;&#x5B83;&#xFF0C;&#x4EE5;&#x4FBF;&#x4F7F;&#x7528; GlobalContext &#x7C7B;&#x4E2D;&#x76F8;&#x5173; API</li>
+</ul>
+<p>&#x8981;&#x914D;&#x7F6E; <code>KoinApplication</code> &#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4EFB;&#x4F55;&#x51FD;&#x6570;:</p>
+<ul>
+<li><code>logger()</code> &#x58F0;&#x660E;&#x4F7F;&#x7528;&#x7684;&#x65E5;&#x5FD7;&#x5B9E;&#x73B0;(&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; EmptyLogger )&#x53CA;&#x65E5;&#x5FD7;&#x4F7F;&#x7528;&#x7684;&#x7EA7;&#x522B;</li>
+<li><code>modules()</code> &#x8BBE;&#x7F6E;&#x8981;&#x52A0;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; Koin &#x6A21;&#x5757;&#x5217;&#x8868;(list &#x6216; vararg list)</li>
+<li><code>properties()</code>  &#x5C06; HashMap &#x5C5E;&#x6027;(&#x952E;&#x503C;&#x5BF9;&#xFF09;&#x52A0;&#x8F7D;&#x5230; Koin &#x5BB9;&#x5668;&#x4E2D;</li>
+<li><code>fileProperties()</code> &#x4ECE;&#x7ED9;&#x5B9A;&#x6587;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x5E76;&#x52A0;&#x8F7D;&#x5230; Koin &#x5BB9;&#x5668;&#x4E2D;</li>
+<li><code>environmentProperties()</code> &#x4ECE;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x52A0;&#x8F7D;&#x5C5E;&#x6027;&#x5E76;&#x52A0;&#x8F7D;&#x5230; Koin &#x5BB9;&#x5668;&#x4E2D;</li>
+</ul>
+<h3 id="koinapplication-&#x5BF9;&#x8C61;-&#x5168;&#x5C40;-vs-&#x672C;&#x5730;">KoinApplication &#x5BF9;&#x8C61;: &#x5168;&#x5C40; vs &#x672C;&#x5730;</h3>
+<p>&#x7EFC;&#x4E0A;&#x6240;&#x8FF0;&#xFF1A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x63CF;&#x8FF0; Koin &#x5BB9;&#x5668;&#x914D;&#x7F6E;: <code>koinApplication</code> &#x6216; <code>startKoin</code> &#x51FD;&#x6570;&#x3002;</p>
+<ul>
+<li><code>koinApplication</code> &#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A; Koin &#x5BB9;&#x5668;&#x5BF9;&#x8C61;</li>
+<li><code>startKoin</code> &#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A; Koin &#x5BB9;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5728; Koin &#x4E2D;&#x7684; <code>GlobalContext</code> &#x4E2D;&#x6CE8;&#x518C;</li>
+</ul>
+<p>&#x901A;&#x8FC7;&#x5C06;&#x5BB9;&#x5668;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#xFF08;koinApplication&#xFF09;&#x6CE8;&#x518C;&#x5230; <code>GlobalContext</code> &#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5168;&#x5C40; API &#x3002;&#x4EFB;&#x4F55; <code>KoinComponent&#xFF08;koin &#x7EC4;&#x4EF6;&#xFF09;</code> &#x90FD;&#x5C06;&#x5F15;&#x7528; <code>Koin</code> &#x5BF9;&#x8C61;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6765;&#x81EA; <code>GlobalContext</code> &#x7684; <code>Koin</code> &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6709;&#x5173;&#x81EA;&#x5B9A;&#x4E49; Koin &#x5B9E;&#x4F8B;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x76F8;&#x5E94;&#x7AE0;&#x8282;&#x3002;</p>
+<h3 id="&#x5F00;&#x542F;-koin">&#x5F00;&#x542F; Koin</h3>
+<p>&#x542F;&#x52A8; Koin &#x610F;&#x5473;&#x7740;&#x5728; <code>GlobalContext</code> &#x4E2D;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; <code>KoinApplication</code> &#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8981;&#x5728;&#x5F00;&#x542F; Koin &#x5BB9;&#x5668;&#x65F6;&#x52A0;&#x8F7D;&#x76F8;&#x5173;&#x6A21;&#x5757;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x4F7F;&#x7528; <code>startKoin</code> &#x51FD;&#x6570;:</p>
+<pre><code class="lang-kotlin"><span class="hljs-comment">// &#x5728; GlobalContext &#x4E2D;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; KoinApplication &#x5B9E;&#x4F8B;&#x3002;</span>
+startKoin {
+    <span class="hljs-comment">// &#x58F0;&#x660E;&#x4F7F;&#x7528;&#x7684;&#x65E5;&#x5FD7;</span>
+    logger()
+    <span class="hljs-comment">// &#x58F0;&#x660E;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;</span>
+    modules(coffeeAppModule)
+}
+</code></pre>
+<h3 id="module-dsl">Module DSL</h3>
+<p>&#x4E00;&#x4E2A; Koin &#x6A21;&#x5757;&#x5C06;&#x6536;&#x96C6;&#x60A8;&#x4E3A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6CE8;&#x5165;&#x6216;&#x5408;&#x5E76;&#x7684;&#x58F0;&#x660E;&#x3002;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6A21;&#x5757;&#xFF0C;&#x53EA;&#x9700;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;:</p>
+<ul>
+<li><code>module { // module content }</code> - &#x521B;&#x5EFA;&#x4E00;&#x4E2A; Koin &#x6A21;&#x5757;</li>
+</ul>
+<p>&#x8981;&#x63CF;&#x8FF0;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;:</p>
+<ul>
+<li><code>factory { //definition }</code> - &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x5BF9;&#x8C61;&#x58F0;&#x660E;</li>
+<li><code>single { //definition }</code> - &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#x58F0;&#x660E;(&#x4E5F;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x522B;&#x540D;)</li>
+<li><code>get()</code> - &#x89E3;&#x6790;&#x7EC4;&#x4EF6;&#x4F9D;&#x8D56;&#x9879;(&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;name&#x3001;scope &#x6216;&#x8005; parmeters)</li>
+<li><code>bind()</code> - &#x4E3A;&#x7ED9;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x58F0;&#x660E;&#x6DFB;&#x52A0;&#x8981;&#x7ED1;&#x5B9A;&#x7684;&#x7C7B;&#x578B;</li>
+<li><code>binds()</code> - &#x4E3A;&#x7ED9;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x58F0;&#x660E;&#x6DFB;&#x52A0;&#x8981;&#x7ED1;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x6570;&#x7EC4;</li>
+<li><code>scope { // scope group }</code> - &#x4E3A; <code>scoped</code> &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x7EC4;</li>
+<li><code>scoped { //definition }</code> - &#x63D0;&#x4F9B;&#x4EC5;&#x5B58;&#x5728;&#x4E8E; scope &#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x58F0;&#x660E;</li>
+</ul>
+<p>&#x6CE8;&#x610F;:<code>named()</code>&#x51FD;&#x6570;&#x5141;&#x8BB8;&#x4F60;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x9650;&#x5B9A;&#x7B26;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x547D;&#x540D;&#x4F60;&#x7684;&#x58F0;&#x660E;&#x3002;</p>
+<h3 id="&#x4E66;&#x5199;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF08;module">&#x4E66;&#x5199;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF08;module)</h3>
+<p>Koin &#x6A21;&#x5757;&#x662F;&#x7528;&#x6765;&#x58F0;&#x660E;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x7684;&#x533A;&#x57DF;&#x3002;&#x4F7F;&#x7528; <code>module</code> &#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E00;&#x4E2A; Koin &#x6A21;&#x5757;:</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> myModule</span> = module {
+   <span class="hljs-comment">// &#x5728;&#x8FD9;&#x91CC;&#x58F0;&#x660E;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x4F9D;&#x8D56;&#x9879;</span>
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A; module &#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x76F8;&#x5173;&#x7EC4;&#x4EF6;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: KOIN CORE">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-Definitaions.html" class="navigation navigation-next " aria-label="Next page: Definitations">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Koin DSL","tags":["koin"],"categories":["koin"],"level":"1.4.1","depth":2,"next":{"title":"Definitations","level":"1.4.2","depth":2,"path":"KOIN/Part1/02-Definitaions.md","ref":"KOIN/Part1/02-Definitaions.md","articles":[]},"previous":{"title":"KOIN CORE","level":"1.4","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Koin DSL","level":"1.4.1","depth":2,"path":"KOIN/Part1/01-Koin_DSL.md","ref":"KOIN/Part1/01-Koin_DSL.md","articles":[]},{"title":"Definitations","level":"1.4.2","depth":2,"path":"KOIN/Part1/02-Definitaions.md","ref":"KOIN/Part1/02-Definitaions.md","articles":[]},{"title":"Modules","level":"1.4.3","depth":2,"path":"KOIN/Part1/03-Modules.md","ref":"KOIN/Part1/03-Modules.md","articles":[]},{"title":"Start Koin","level":"1.4.4","depth":2,"path":"KOIN/Part1/04-Start_Koin.md","ref":"KOIN/Part1/04-Start_Koin.md","articles":[]},{"title":"Koin Component","level":"1.4.5","depth":2,"path":"KOIN/Part1/05-Koin_Component.md","ref":"KOIN/Part1/05-Koin_Component.md","articles":[]},{"title":"Injecting Parameters","level":"1.4.6","depth":2,"path":"KOIN/Part1/06-Injecting_Parameters.md","ref":"KOIN/Part1/06-Injecting_Parameters.md","articles":[]},{"title":"Setters Injection","level":"1.4.7","depth":2,"path":"KOIN/Part1/07-Setters_Injection.md","ref":"KOIN/Part1/07-Setters_Injection.md","articles":[]},{"title":"Scope API","level":"1.4.8","depth":2,"path":"KOIN/Part1/08-Scope_API.md","ref":"KOIN/Part1/08-Scope_API.md","articles":[]},{"title":"Using Java","level":"1.4.9","depth":2,"path":"KOIN/Part1/09-Using_Java.md","ref":"KOIN/Part1/09-Using_Java.md","articles":[]},{"title":"Logging","level":"1.4.10","depth":2,"path":"KOIN/Part1/10-Logging.md","ref":"KOIN/Part1/10-Logging.md","articles":[]},{"title":"Properties","level":"1.4.11","depth":2,"path":"KOIN/Part1/11-Properties.md","ref":"KOIN/Part1/11-Properties.md","articles":[]},{"title":"Experimental Features","level":"1.4.12","depth":2,"path":"KOIN/Part1/12-Experimental_Features.md","ref":"KOIN/Part1/12-Experimental_Features.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","github","sharing-plus","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/AndyJennifer"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"AndyJennifer","repo":"glory","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AndyJennifer","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Koin Doc Zh","language":"zh-hans","links":{"sidebar":{"My Blog":"https://andyjennifer.com"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"KOIN/Part1/01-Koin_DSL.md","mtime":"2020-03-30T17:53:27.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-30T17:54:00.244Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
